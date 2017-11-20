@@ -1,0 +1,534 @@
+html{
+  font-size: 18px;
+}
+body{
+  width: 100%;
+  margin:0;
+}
+a:link {
+    text-decoration: none;
+    color:#FFF
+}
+a:visited {
+    text-decoration: none;
+    color:#FFF
+}
+a:hover {
+    text-decoration: underline;
+    color:#FFF
+}
+a:active {
+    text-decoration: none;
+    color:#FFF
+}
+/*header*/
+header{
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  height:2.82rem;
+  z-index: 10;
+}
+
+.logo{
+  width: 960px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+.logo img{
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  height:1.5rem;
+}
+
+.logo span{
+  display: block;
+  padding: 0.66rem 0;
+  font-size:1rem;
+}
+
+/*main*/
+
+/*banner*/
+
+.banner{
+  height: 25rem;
+  display: flex;
+  position: relative;
+  background-image: url("../moto.jpeg");
+  background-size: 100%;
+  overflow: hidden;
+  padding-top: 2.82rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrival-box{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 960px;
+}
+
+.arrival{
+  background-color: black;
+  color: white;
+  height: auto;
+  width: 20rem;
+  font-family: Helvetica;
+  padding: 2rem 3rem;
+}
+
+.arrival span{
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.arrival h2{
+  font-size:2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+/*navigation*/
+
+nav{
+  display: flex;
+  background-color: firebrick;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablet{
+  display: none;
+}
+
+.nav-box{
+  background-color: firebrick;
+  width:960px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: Helvetica;
+}
+
+/*content*/
+.content{
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content-box{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3rem;
+  width: 960px;
+}
+
+.content-image{
+  width:30%;
+  padding: 2rem 0;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.content-image img{
+  height:9rem;
+  width: 100%;
+  z-index:5;
+}
+
+.content-text-box{
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content-text-box-box{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 960px;
+}
+
+.content-text{
+  background-color: black;
+  font-family: Helvetica;
+  color: white;
+  width: 30%;
+  padding: 0.5rem 0;
+  margin:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid black;
+}
+
+/*Location & Hours*/
+.lh{
+  width:100%;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lh-box{
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.lh-box-text{
+  width: 35%;
+  background-color: black;
+  font-family: Helvetica;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.lhnum{
+  width:100%;
+  padding-top: 0.5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lhnum-box{
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.lhnum-box-text{
+  width: 38.5%;
+  font-family: Helvetica;
+  color: black;
+}
+
+
+/*footer*/
+
+footer{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 5rem;
+}
+
+.footer-box{
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color:white;
+    font-family: Helvetica;
+}
+
+
+@media only screen and (max-width: 1024px){
+  nav{
+    display: none;
+  }
+  nav.tablet{
+    display: flex;
+    background-color: firebrick;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-box{
+    background-color: firebrick;
+    width:960px;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Helvetica;
+  }
+
+  #desktop{
+    display:none;
+  }
+
+  .content{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content-image{
+    width:47%;
+    padding: 2rem 0;
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .content-image img{
+    height:9rem;
+    width: 100%;
+    z-index:5;
+  }
+
+  .content-text-box{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content-text-box-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 960px;
+  }
+
+  .content-text{
+    background-color: black;
+    font-family: Helvetica;
+    color: white;
+    width: 47%;
+    padding: 0.5rem 0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+  }
+
+  .banner{
+    height: 25rem;
+    display: flex;
+    position: relative;
+    background-image: url("../moto.jpeg");
+    background-size: 1024px;
+    overflow: hidden;
+    padding-top: 2.82rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 470px)
+{
+  .banner{
+    height: 15rem;
+    display: flex;
+    position: relative;
+    background-image: url("../moto.jpeg");
+    background-size: 500px;
+    overflow: hidden;
+    padding-top: 2.82rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .arrival-box{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top:10rem;
+  }
+
+  .arrival{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 20rem;
+    font-family: Helvetica;
+    padding: 1rem 2rem;
+  }
+
+  .arrival span{
+    font-size: 0.77rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.05rem;
+  }
+
+  .arrival h2{
+    font-size:1rem;
+    font-weight: bold;
+    margin-bottom: 0.05rem;
+  }
+  #tablet{
+    display:none;
+  }
+  .content{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3rem;
+    width: 960px;
+  }
+
+  .content-image{
+    width:90%;
+    padding: 2rem 0;
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .content-image img{
+    height:9rem;
+    width: 100%;
+    z-index:5;
+  }
+
+  .content-text-box{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content-text-box-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 960px;
+  }
+
+  .content-text{
+    background-color: black;
+    font-family: Helvetica;
+    color: white;
+    width: 90%;
+    padding: 0.5rem 0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+  }
+  footer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 5rem;
+  }
+
+  .footer-box{
+      width: 960px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      font-family: Helvetica;
+  }
+
+  .lh{
+    width:100%;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lh-box{
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+  }
+  .lh-box-text{
+    width: 90%;
+    background-color: black;
+    font-family: Helvetica;
+    color: white;
+    padding: 1rem 0 1rem 2rem;
+  }
+
+  .lh-box-text#phone{
+    margin-top:3em;
+  }
+
+  .lhnum{
+    width:100%;
+    padding-top: 0.5rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5.5rem;
+  }
+  .lhnum-box{
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+  }
+  .lhnum-box-text{
+    width: 90%;
+    font-family: Helvetica;
+    color: black;
+  }
+  .lhnum-box-text#phone{
+    margin-top:5rem;
+  }
+
+}
